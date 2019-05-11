@@ -1,22 +1,52 @@
-/* body {
-  background-color: grey;
-} */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #E0E0E0;
+}
+
+.title {
+  font-family: 'Lobster', cursive;
+  font-size: 44px;
+  color: #1E88E5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+@media (min-width: 860px) {
+  .card {
+    max-width: 75%;
+  }
+}
 
 .product {
   border-bottom: 1px solid grey;
   padding: 8px 0;
 }
 
+.product:first-of-type {
+  padding-top: 0;
+}
+
 .product:last-of-type {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .product__name {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .product__price {
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .product__description {
