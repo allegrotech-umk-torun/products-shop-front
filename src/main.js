@@ -1,5 +1,7 @@
+const productListingElement = document.getElementById('product-listing');
+
 const response = getProductList();
 
 response.products
   .map(product => renderProduct(product))
-  .forEach(html => console.log(html));
+  .forEach(html => productListingElement.innerHTML += html);
