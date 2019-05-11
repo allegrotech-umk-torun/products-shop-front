@@ -1,3 +1,25 @@
-body {
+/* body {
   background-color: grey;
+} */
+
+.product {
+  border-bottom: 1px solid grey;
+  padding: 8px 0;
+}
+
+.product:last-of-type {
+  border-bottom: none;
+}
+
+.product__name {
+  font-size: 28px;
+}
+
+.product__price {
+  font-size: 22px;
+}
+
+.product__description {
+  margin-top: 8px;
+  font-style: italic;
 }
