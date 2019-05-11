@@ -43,6 +43,12 @@ body {
 
 .product__name {
   font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.product__details {
+  display: flex;
+  flex-direction: row;
 }
 
 .product__price {
@@ -52,4 +58,10 @@ body {
 .product__description {
   margin-top: 8px;
   font-style: italic;
+}
+
+.product__image {
+  width: 128px;
+  height: 128px;
+  margin-right: 8px;
 }
