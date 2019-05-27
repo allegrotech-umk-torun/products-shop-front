@@ -20,7 +20,7 @@ function getProductList() {
         "name": "Notatnik",
         "price": {
           "amount": "9.00",
-          "currency": "PLN"
+          "currency": "EUR"
         },
         "description": {
           "text": "Notatnik w którym można pisać ołówkiem. Długopisem też."
@@ -48,7 +48,7 @@ function getProductList() {
         "name": "Drzewo",
         "price": {
           "amount": "544.89",
-          "currency": "PLN"
+          "currency": "USD"
         },
         "description": {
           "text": "Na całym świecie rośnie obecnie około 3 bilionów 40 miliardów drzew."

@@ -1,14 +1,17 @@
+// 123,12 zł
+// $ 123.12
+// € 123.12
 const DISPLAY_CURRENCY = {
-  PLN: 'zł',
-  EUR: '€',
-  USD: '$'
+  PLN: { prefix: '',   suffix: ' zł', separator: ',' },
+  EUR: { prefix: '€ ', suffix: '',    separator: '.' },
+  USD: { prefix: '$ ', suffix: '',    separator: '.' }
 }
 
 function formatPrice(price) {
-  const formattedCurrency = DISPLAY_CURRENCY[price.currency];
-  const formattedAmount = price.amount.replace('.', ',');
-  
-  return `${formattedAmount} ${formattedCurrency}`;
+  const currencySettings = DISPLAY_CURRENCY[price.currency];
+  const formattedAmount = price.amount.replace('.', currencySettings.separator);
+
+  return `${currencySettings.prefix}${formattedAmount}${currencySettings.suffix}`;
 }
 
 function renderProduct(product) {
