@@ -6,7 +6,7 @@ const DISPLAY_CURRENCY = {
 
 function formatPrice(price) {
   const formattedCurrency = DISPLAY_CURRENCY[price.currency];
-  const formattedAmount = price.amount.replace('.', ',');
+  const formattedAmount = price.amount.toString().replace('.', ',');
   
   return `${formattedAmount} ${formattedCurrency}`;
 }

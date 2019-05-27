@@ -1,4 +1,25 @@
 function getProductList() {
+  const goodUrl = 'https://jsonplaceholder.typicode.com/todos/1';
+  const badUrl = 'https://jsonplaceholder.typicode.com/todos/1213123';
+  const productionUrl = 'https://grzegorz-java-demo-app.herokuapp.com/products';
+
+  const options = {
+    mode: 'cors'
+  }
+
+  return fetch(productionUrl, options)
+    .then(response => {
+      return response.json();
+    })
+    .then(response => {
+      return response;
+    })
+    .catch(response => {
+      console.error(response);
+    })
+}
+
+function getProductListDeprecated() {
   return {
     "products": [
       {
