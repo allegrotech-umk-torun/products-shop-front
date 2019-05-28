@@ -10,12 +10,20 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet">
   
   <script src="services/shop-service.js"></script>
+  <script src="services/search-service.js"></script>
   <script src="components/product.js"></script>
 </head>
 
 <body>
   <h1 class="title">Mój ekstra sklep!</h1>
   <main class="container">
+    <section class="card">
+      <label>Szukaj produktów</label>
+      <div>
+        <input class="input-bar" type="text" id="search-input">
+        <button class="button" id="search-button">Szukaj!</button>
+      </div>
+    </section>
     <section id="product-listing" class="card"></section>
   </main>
   <script src="main.js"></script>

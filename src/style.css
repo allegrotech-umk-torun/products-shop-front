@@ -19,6 +19,8 @@ body {
   background-color: white;
   padding: 16px;
   border-radius: 4px;
+  margin-bottom: 16px;
+  width: 100%;
 }
 
 @media (min-width: 860px) {
@@ -64,4 +66,15 @@ body {
   width: 128px;
   height: 128px;
   margin-right: 8px;
+}
+
+.input-bar {
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  color: white;
+  background-color: #1E88E5;
+  font-size: 18px;
 }
