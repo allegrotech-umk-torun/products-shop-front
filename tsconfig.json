@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "amd",
+        "allowJs": true,
+        "outDir": "./build",
+        "outFile": "index.js",
+        "diagnostics": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noUnusedParameters": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

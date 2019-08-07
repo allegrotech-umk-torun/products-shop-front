@@ -1,7 +1,7 @@
 // function getProductList() {
 //   const goodUrl = 'https://jsonplaceholder.typicode.com/todos/1';
 //   const badUrl = 'https://jsonplaceholder.typicode.com/todos/1213123';
-//   const productionUrl = 'https://grzegorz-java-demo-app.herokuapp.com/products';
+// const productionUrl = 'https://grzegorz-java-demo-app.herokuapp.com/products';
 
 //   const options = {
 //     mode: 'cors'
@@ -19,7 +19,7 @@
 //     })
 // }
 
-function getProductList() {
+export function getProductList(): any {
   return {
     "products": [
       {

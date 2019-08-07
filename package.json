@@ -1,0 +1,25 @@
+{
+  "name": "products-shop-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "start": "tsc && lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allegrotech-umk-torun/products-shop-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allegrotech-umk-torun/products-shop-front/issues"
+  },
+  "homepage": "https://github.com/allegrotech-umk-torun/products-shop-front#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.3",
+    "typescript": "^3.5.3"
+  }
+}
